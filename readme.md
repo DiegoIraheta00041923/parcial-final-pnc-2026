@@ -40,6 +40,8 @@ Un usuario reportó que al pedir prestado el libro **The Selfish Gene**, devolve
 
 **Instrucción:** Explique la causa del problema y resuélvalo.
 
+**Respuesta:**
+Si me funciona, pero si no funciona es porque posiblemente no se maneje el stock, no se incremente de nuevo.
 ---
 
 ### 3. Cantidad de libros por género (10%)
@@ -100,5 +102,9 @@ QA ha reportado que un usuario es capaz de devolver libros que nunca ha solicita
 - Confirme si este comportamiento es realmente posible.
 - Si es posible, explique la causa y resuelva el problema.
 - Si no es posible, explique por qué, haciendo referencia al código correspondiente.
+
+**Respuesta:**
+Si es posible el comportamiento, es posible debido a que no hay una comprobación de que ese libro este prestado a dicho usuario
+por eso siempre se crea una devolución. 
 
 ---
