@@ -63,6 +63,7 @@ GET /books?id=ed16ed1e-7017-4697-a08a-d28c09a74acf
 **Respuesta:**
 A la hora de hacer el llamado se traen todos los libros (no se si todos pero no trae uno en específico), en este caso en el controller
 no se toma como un Request Param sino como un Path Variable, entonces la ruta adecuada debe ser /books/ed16ed1e-7017-4697-a08a-d28c09a74acf
+Sería un error del llamdo más no implementación
 ---
 
 ### 5. Error al crear un libro (10%)
@@ -82,6 +83,9 @@ QA ha reportado que el siguiente payload enviado al endpoint `POST /books` provo
 
 **Instrucción:** Explique la causa del problema.
 
+**Respuesta:**
+A la hora de hacerle post al objeto da problema debido al genre, al estar usando un enum (Genre) el género debería escribirse en mayúsculas
+por como funcionan los enum. El cambio que se debe hacer para que funcione es que en lugar de "classic" sea "CLASSIC"
 ---
 
 ### 6. Devolución de libros no prestados (20%)
