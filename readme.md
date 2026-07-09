@@ -1,4 +1,4 @@
-# [Nombre] [Carné]
+# Diego Alejandro Iraheta Monterrosa 00041923
 
 ## Indicaciones
 
@@ -25,6 +25,12 @@ Actualmente:
 - Filtrar por **autor y género al mismo tiempo** provoca que el servidor falle.
 
 **Instrucción:** Explique la causa del problema y resuélvalo.
+
+**Respuesta:**
+En el BookRepository cuando se hace una búsqueda por autor y género como paramétro se utiliza un String para referirse al Género
+Sin embargo genero es un enum. Se realizó un cambio para que dejara de usar un String y usara el Enum como en la funcion de findByGenre
+En el service se pasa como String, pero se hace un ajuste para que busque según el enum.
+
 
 ---
 
