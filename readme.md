@@ -48,6 +48,9 @@ Existe un endpoint que devuelve la cantidad de libros disponibles por género. S
 
 **Instrucción:** Explique la causa del problema y resuélvalo.
 
+**Respuesta:**
+Da problemas debido a que hay un solo libro que no tiene género, por lo tanto crashea al hacer el mapeo.
+La solución es hacer una validación, si el género no es nulo se toma en cuenta para hacer el conteo
 ---
 
 ### 4. Error al consultar un libro por ID (10%)
