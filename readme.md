@@ -60,6 +60,9 @@ GET /books?id=ed16ed1e-7017-4697-a08a-d28c09a74acf
 
 **Instrucción:** Explique la causa del problema.
 
+**Respuesta:**
+A la hora de hacer el llamado se traen todos los libros (no se si todos pero no trae uno en específico), en este caso en el controller
+no se toma como un Request Param sino como un Path Variable, entonces la ruta adecuada debe ser /books/ed16ed1e-7017-4697-a08a-d28c09a74acf
 ---
 
 ### 5. Error al crear un libro (10%)
